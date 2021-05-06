@@ -1,0 +1,181 @@
+*,::after,::before{
+
+    box-sizing: border-box;
+    border:0 ;
+    margin: 0;
+    padding: 0;
+}
+ul{list-style-type: none;}
+
+a{text-decoration: none;}
+
+.budget{
+padding-top: 30px;
+    background-color: rgb(73, 10, 133);
+    width: 400px;
+    height: 700px;
+    position: relative;
+    margin: auto;
+}
+
+.balance{margin-left: 10px;}
+.balance__header{
+
+color: aliceblue;
+font-size: 17px;
+font-weight: bold;
+}
+.balance__body{color: aliceblue;
+
+margin-top: 5px;
+}
+
+.balance-amount,.balance__body{font-size: 1.5rem;}
+
+.outcome-amount{color:rgb(185, 71, 29) ;}
+.amount{font-weight:700;
+
+    font-size: 1.3rem;}
+/* menu */
+.menu{
+    color: aliceblue;
+    width: 300px;
+    margin:20px auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+.menu__title{
+    opacity: 0.5;
+}
+.menu__list{
+    text-align: center;
+}
+.menu-outcome{color: rgb(185, 71, 29);}
+
+/* dashboard */
+
+.dashboard{
+
+position: absolute;
+bottom: 0px;
+background-color: aliceblue;
+border-radius:20px 20px 0 0;
+z-index: 1;
+width: 100%;
+height: 550px;
+}
+.dashboard__title{
+
+    margin-left: 5px;
+    color: rgb(55, 7, 100);
+    margin-top: 30px;
+    font-size: 1.6rem;
+    font-family: 500;
+
+}
+.dashboard__menu{
+
+    margin-left: 5px;
+    margin-top: 10px;
+    display: flex;
+
+}
+.dashboard__item{
+
+    margin-left: 5px;
+    font-size:17px ;
+    opacity: 0.7;
+    color: rgb(55, 7, 100);
+    cursor: pointer;
+}
+.dashboard__item:hover{opacity: 1;}
+
+.expenses-list,.income-list,.all-list{
+
+    margin-left: 11px;
+    margin-top: 8px;
+    display: none;
+}
+.expenses-list{
+
+    display: block;
+}
+.dashboard__add{display: flex;position: absolute;bottom:10px;/*display: none;*/}
+.active{opacity: 1;}
+.plus-sign{
+
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left:10px;
+    transform: translateY(2px) ;
+    
+}
+.dashboard__add input {width:50%;border: 1px solid grey;
+
+outline: 0;
+padding: 5px 7px;
+}
+.dashboard__add input[type=number]{border-left:0;}
+.dashboard__add input[type=text]{border-right:0;}
+
+.add-income{
+    display: none;
+}
+
+.income-list li{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 17px;
+}
+.expenses-list li{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(248, 71, 7);
+    margin-top: 5px;
+    font-size: 17px;
+}
+.orange{ color: rgb(248, 71, 7);}
+
+.all-list li{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 17px;
+
+
+}
+.income-list li ul{
+    display: flex;
+}
+.expenses-list li ul{
+    display: flex;
+}
+
+
+::placeholder{font-size: 1rem;}
+.inner-dashboard{position: relative;height:100%;overflow: hidden;}
+
+.purple{background-color:rgb(104, 27, 177) ;
+
+position: absolute;
+bottom: 0px;
+height: 10px;
+width: 100%;
+}
+
+.outcome-list li{color: rgb(185, 71, 29);}
+
+.delete,.edit{
+
+width: 20px;
+height: 20px;
+cursor: pointer;
+opacity: 0.7;
+}
+.delete{margin-left: 5px;}
+.edit:hover{opacity: 1;}
+.delete:hover{opacity: 1;}
+

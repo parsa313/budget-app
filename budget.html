@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>budget</title>
+    <link rel="stylesheet" href="budget.css">
+</head>
+<body>
+
+    <div class="budget">
+
+
+<div class="balance">
+<div class="balance__header">
+    Balance
+</div>
+<div class="balance__body" >$<span class="amount balance-amount">0</span></div>
+</div>
+<div class="menu">
+
+    <ul>
+        <li class="menu__title">
+      Income
+    </li>
+    <li class="menu__list">
+        $<span class="income-amount">0</span>
+    </li>
+   </ul>
+    <ul>
+        <li class="menu__title">
+            Outcome
+
+        </li>
+        <li class="menu__list menu-outcome">
+            $<span class="amount outcome-amount orange">0</span>
+
+        </li>
+    </ul>
+   </div>
+   <div class="dashboard">
+       <div class="inner-dashboard">
+
+   <h2 class="dashboard__title">Dashboard</h2>
+   <ul class="dashboard__menu">
+       <li class="dashboard__item active"  id="expense">Expenses</li>
+       <li class="dashboard__item" id="income">Income</li>
+       <li class="dashboard__item" id="all">All</li>
+   </ul>
+   <ul class="expenses-list">
+               
+
+</ul>
+<ul class="income-list">
+
+</ul>
+<ul class="all-list">
+               
+
+</ul>
+
+   <div class="dashboard__add add-expense ">
+    <input type="text" placeholder="title">
+    <input type="number" placeholder="$0">
+    <img class="plus-sign add-expense-sign" src="images/plus1.png" alt="">
+</div>
+   <div class="dashboard__add add-income">
+    <input type="text" placeholder="Title">
+    <input type="number" placeholder="$0">
+    <img class="plus-sign add-income-sign" src="images/plus1.png" alt="">
+    
+</div>
+<div class="purple"></div>
+</div>
+</div>
+    </div>
+    <script src="BudgetClass.js"></script>
+   <script src="budget.js" defer></script>
+</body>
+</html>
